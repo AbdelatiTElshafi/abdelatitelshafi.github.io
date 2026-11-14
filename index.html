@@ -1,6 +1,320 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Nilevo Studios</title>
-<style>body{font-family:system-ui,sans-serif;max-width:640px;margin:60px auto;padding:0 16px;color:#222;background:#fff}h1{color:#7a4a12}a{color:#b5651d}</style></head>
-<body><h1>Nilevo Studios</h1><p>Indie mobile games inspired by Egypt and the Nile.</p>
-<h2>Tubora</h2><p>A relaxing ball-sort puzzle on a Nile adventure with Mishmish the cat.</p>
-<p><a href="tubora/privacy.html">Privacy Policy</a></p>
-<p>Contact: abdelatielshafi@gmail.com</p></body></html>
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nilevo Studios | Games and apps from the Nile</title>
+<meta name="description" content="Nilevo Studios is a small independent studio in Egypt. We build mobile games and apps with an Egyptian soul and keep them fair to use. Our first game: Tubora.">
+<link rel="canonical" href="https://abdelatitelshafi.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nilevo Studios">
+<meta property="og:description" content="Games and apps from the banks of the Nile. Our first game: Tubora.">
+<meta property="og:image" content="https://abdelatitelshafi.github.io/img/tubora-og.jpg">
+<meta name="theme-color" content="#1C1938">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%231C1938'/%3E%3Ccircle cx='46' cy='18' r='6' fill='%23FFC83D'/%3E%3Cpath d='M10 44 L30 16 L30 44Z' fill='%23FFC83D'/%3E%3Cpath d='M30 16 L52 44 H30Z' fill='%23F59A1E'/%3E%3Cpath d='M6 46 Q20 38 32 46 T58 46 V58 H6Z' fill='%234A7BF0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Nilevo Studios","url":"https://abdelatitelshafi.github.io/","email":"abdelatielshafi@gmail.com","description":"Independent studio in Egypt building mobile games and apps."}</script>
+<style>
+:root{
+  --night:#1C1938; --dusk:#2A2550; --gold:#FFC83D; --amber:#F59A1E; --sand:#EEE4C4; --nile:#4A7BF0; --coral:#F2735A; --ink:#1C1938;
+  --display:'Fredoka','Cairo',system-ui,sans-serif; --body:'Cairo',system-ui,sans-serif;
+  --gutter:clamp(20px,5vw,72px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;overflow-x:clip;background:var(--night);color:var(--sand);font-family:var(--body);font-size:1.08rem;line-height:1.7;-webkit-font-smoothing:antialiased}
+:lang(ar) .display, html[lang="ar"] .display{font-family:'Cairo',sans-serif;font-weight:800;letter-spacing:0}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+.wrap{padding-inline:var(--gutter);max-width:1240px;margin-inline:auto}
+.display{font-family:var(--display);font-weight:700;line-height:1.08;letter-spacing:-.01em;margin:0}
+
+/* ---------- header ---------- */
+header{position:absolute;inset:0 0 auto 0;z-index:10}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:20px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-family:var(--display);font-weight:600;font-size:1.3rem;color:#fff}
+.brand svg{width:42px;height:42px;flex:none}
+nav{display:flex;align-items:center;gap:clamp(14px,3vw,34px)}
+nav a{text-decoration:none;font-weight:600;color:var(--sand);opacity:.9}
+nav a:hover{opacity:1;color:var(--gold)}
+.lang{font:600 .95rem var(--body);color:var(--night);background:var(--gold);border:0;border-radius:999px;padding:7px 18px;cursor:pointer}
+.lang:hover{background:#ffd666}
+.brand span,nav a{white-space:nowrap}
+@media(max-width:640px){nav a.hide-s{display:none}.brand{font-size:1.1rem;gap:9px}.brand svg{width:36px;height:36px}.bar{padding-block:14px}}
+
+/* ---------- hero: sunset on the Nile ---------- */
+.hero{position:relative;min-height:max(640px,min(100svh,900px));overflow:hidden;display:flex;flex-direction:column;justify-content:flex-start;
+  background:linear-gradient(180deg,#1C1938 0%,#2A2550 38%,#4a3a82 62%,#b1587a 80%,#f08c58 92%)}
+.hero .wrap{position:relative;z-index:5;padding-top:clamp(110px,16vh,170px);padding-bottom:clamp(220px,34vh,300px);width:100%}
+.hero h1{font-size:clamp(2.5rem,6.4vw,5.2rem);color:#fff;max-width:13ch}
+html[lang="ar"] .hero h1{max-width:16ch;line-height:1.3;font-size:clamp(2.2rem,5.2vw,4.3rem)}
+html[dir="rtl"] .pyramids{transform:scaleX(-1)}
+.hero p.lead{max-width:38ch;font-size:clamp(1.05rem,1.6vw,1.3rem);margin:22px 0 32px;color:var(--sand)}
+.cta{display:flex;flex-wrap:wrap;gap:14px}
+.btn{display:inline-block;text-decoration:none;font-weight:800;border-radius:14px;padding:13px 26px;font-size:1.05rem}
+.btn.primary{background:var(--gold);color:var(--night);box-shadow:0 5px 0 #c99312}
+.btn.primary:hover{transform:translateY(2px);box-shadow:0 3px 0 #c99312}
+.btn.ghost{border:2px solid rgba(238,228,196,.55);color:var(--sand)}
+.btn.ghost:hover{border-color:var(--gold);color:var(--gold)}
+.sun{position:absolute;z-index:1;inset-inline-end:clamp(6%,14vw,20%);bottom:31%;width:clamp(150px,24vw,300px);aspect-ratio:1;border-radius:50%;
+  background:radial-gradient(circle at 50% 50%,#ffe28a 0 55%,var(--gold) 56% 100%);box-shadow:0 0 90px 30px rgba(255,200,61,.35)}
+.pyramids{position:absolute;z-index:2;inset:auto 0 23% 0;height:clamp(160px,30vw,330px);width:100%}
+.water{position:absolute;z-index:3;inset:auto 0 0 0;height:24%;background:linear-gradient(180deg,#3d63c9,#22369a 70%,#1a2a78)}
+.wave{position:absolute;left:0;width:200%;height:70px;top:-34px;animation:drift 22s linear infinite}
+.wave svg{display:block;width:100%;height:100%}
+.wave.w2{top:-14px;animation-duration:34s;animation-direction:reverse;opacity:.9}
+.wave.w3{top:14px;animation-duration:48s;opacity:.8}
+html[dir="rtl"] .wave{animation-name:driftRtl}
+@keyframes drift{to{transform:translateX(-50%)}}
+@keyframes driftRtl{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+.boat{position:absolute;z-index:4;height:auto;animation:bob 6s ease-in-out infinite;filter:drop-shadow(0 6px 6px rgba(0,0,0,.25))}
+@keyframes bob{50%{transform:translateY(-9px) rotate(6deg)}}
+
+/* ---------- Tubora ---------- */
+.game{background:var(--sand);color:var(--ink);padding-block:clamp(64px,9vw,120px)}
+.game .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(32px,6vw,90px);align-items:center}
+.game h2.sect{font-size:clamp(2rem,4vw,3.2rem);color:var(--night)}
+.sect-intro{margin:10px 0 clamp(30px,5vw,54px);max-width:46ch;font-weight:600;color:#3b2f8a}
+.game h3.title{font-size:clamp(2.4rem,5vw,4rem);color:var(--night);display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.kind{font:700 .95rem var(--body);color:var(--night);background:var(--gold);border-radius:999px;padding:3px 14px;letter-spacing:0}
+.next{margin-top:clamp(40px,6vw,70px);padding:22px 26px;border:3px dashed rgba(28,25,56,.35);border-radius:18px;display:flex;flex-wrap:wrap;gap:6px 18px;align-items:baseline}
+.next strong{font-family:var(--display);font-size:1.25rem}
+html[lang="ar"] .next strong{font-family:'Cairo',sans-serif;font-weight:800}
+.game .tag{font-size:clamp(1.15rem,1.8vw,1.45rem);font-weight:600;color:#3b2f8a;margin:10px 0 22px;max-width:30ch}
+.game p{max-width:52ch}
+.facts{list-style:none;margin:26px 0;padding:0;display:grid;gap:12px}
+.facts li{padding-inline-start:26px;position:relative}
+.facts li::before{content:"";position:absolute;inset-inline-start:0;top:.62em;width:12px;height:12px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff 0 12%,var(--c) 14%)}
+.facts li:nth-child(1){--c:#E8504A}.facts li:nth-child(2){--c:#3CCB6A}.facts li:nth-child(3){--c:#4A7BF0}.facts li:nth-child(4){--c:#F59A1E}
+.status{display:inline-flex;align-items:center;gap:10px;background:var(--night);color:var(--gold);font-weight:800;border-radius:12px;padding:10px 18px;margin-top:6px}
+.status i{width:10px;height:10px;border-radius:50%;background:#3CCB6A;box-shadow:0 0 0 4px rgba(60,203,106,.25)}
+.links{margin-top:18px;display:flex;gap:22px;flex-wrap:wrap;font-weight:600}
+.links a{color:#3b2f8a}
+.phones{display:flex;justify-content:center;align-items:flex-start;padding-block:20px 60px;min-width:0}
+.phone{flex:0 1 215px;min-width:0;border-radius:26px;overflow:hidden;border:6px solid var(--night);box-shadow:0 22px 40px rgba(28,25,56,.35);background:var(--night)}
+.phone img{width:100%;height:auto}
+.phone:nth-child(1){transform:translateY(34px) rotate(-5deg);margin-inline-end:-26px}
+.phone:nth-child(2){transform:translateY(0) rotate(-1.5deg);z-index:2;margin-inline-end:-26px}
+.phone:nth-child(3){transform:translateY(40px) rotate(2deg);z-index:1;margin-inline-end:-26px}
+.phone:nth-child(4){transform:translateY(6px) rotate(5deg)}
+html[dir="rtl"] .phone:nth-child(odd){transform-origin:center}
+@media(max-width:900px){
+  .game .grid{grid-template-columns:1fr}
+  .phones{overflow-x:auto;justify-content:flex-start;scroll-snap-type:x mandatory;gap:14px;padding:30px var(--gutter);margin-inline:calc(var(--gutter)*-1)}
+  .phone{flex:0 0 58vw;max-width:260px;transform:none!important;margin:0!important;scroll-snap-align:center}
+}
+
+/* ---------- how we work ---------- */
+.way{padding-block:clamp(64px,9vw,110px);background:var(--night)}
+.way h2{font-size:clamp(2rem,4vw,3.2rem);color:#fff;margin-bottom:clamp(30px,5vw,56px);max-width:18ch}
+.way .cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0}
+.way .col{padding-inline:clamp(18px,3vw,40px);border-inline-start:2px solid rgba(255,200,61,.5)}
+.way h3{font:700 1.5rem var(--display);color:var(--gold);margin:0 0 8px}
+html[lang="ar"] .way h3{font-family:'Cairo',sans-serif;font-weight:800}
+.way p{margin:0;max-width:34ch}
+@media(max-width:800px){.way .cols{grid-template-columns:1fr;gap:30px}}
+
+/* ---------- contact ---------- */
+.contact{background:var(--gold);color:var(--night);padding-block:clamp(56px,8vw,96px)}
+.contact h2{font-size:clamp(2.2rem,5vw,4rem)}
+.contact p{margin:10px 0 22px;max-width:40ch;font-weight:600}
+.mail{font:700 clamp(1.15rem,2.8vw,2rem) var(--display);word-break:break-all;text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:6px}
+.mail:hover{color:#3b2f8a}
+
+footer{background:#13112b;color:rgba(238,228,196,.75);padding-block:28px;font-size:.95rem}
+footer .row{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;align-items:center}
+footer nav{gap:22px}
+footer a{opacity:.85}
+
+@media(prefers-reduced-motion:reduce){.wave,.boat{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Nilevo Studios">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1C1938"/><stop offset="1" stop-color="#3b2f8a"/></linearGradient><clipPath id="lc"><rect width="64" height="64" rx="15"/></clipPath></defs><g clip-path="url(#lc)"><rect width="64" height="64" fill="url(#lg)"/><circle cx="46" cy="17" r="6" fill="#FFC83D"/><path d="M8 45 L29 15 L29 45Z" fill="#FFC83D"/><path d="M29 15 L54 45 H29Z" fill="#F59A1E"/><path d="M0 47 Q16 38 32 47 T64 47 V64 H0Z" fill="#4A7BF0"/><path d="M0 54 Q16 46 32 54 T64 54 V64 H0Z" fill="#2c54c9"/></g><rect x="1.5" y="1.5" width="61" height="61" rx="14" fill="none" stroke="#FFC83D" stroke-width="3"/></svg>
+      <span>Nilevo Studios</span>
+    </a>
+    <nav>
+      <a class="hide-s" href="#games" data-i18n="nav_game">Our games and apps</a>
+      <a class="hide-s" href="#way" data-i18n="nav_way">How we build</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+      <button class="lang" id="lang" type="button" aria-label="Switch language">العربية</button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <h1 class="display" data-i18n="hero_h">Games and apps from the banks of the Nile.</h1>
+    <p class="lead" data-i18n="hero_p">Nilevo Studios is a small independent team in Egypt. We build mobile games and apps with an Egyptian soul, and we keep them fair to use.</p>
+    <div class="cta">
+      <a class="btn primary" href="#games" data-i18n="cta_game">See what we make</a>
+      <a class="btn ghost" href="#contact" data-i18n="cta_mail">Write to us</a>
+    </div>
+  </div>
+
+  <div class="sun" aria-hidden="true"></div>
+  <svg class="pyramids" viewBox="0 0 1200 330" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+    <path d="M0 330 L120 210 L250 330Z" fill="#241f47"/>
+    <path d="M880 330 L1010 190 L1180 330Z" fill="#241f47"/>
+    <path d="M520 330 L760 70 L760 330Z" fill="#FFC83D"/>
+    <path d="M760 70 L1040 330 H760Z" fill="#F59A1E"/>
+    <path d="M330 330 L450 200 L450 330Z" fill="#c98a3a"/>
+    <path d="M450 200 L590 330 H450Z" fill="#a8692a"/>
+  </svg>
+  <div class="water" aria-hidden="true">
+    <div class="wave w3"><svg viewBox="0 0 2400 70" preserveAspectRatio="none"><path fill="#1f3590" d="M0 35 Q150 5 300 35 T600 35 T900 35 T1200 35 T1500 35 T1800 35 T2100 35 T2400 35 V70 H0Z"/></svg></div>
+    <div class="wave w2"><svg viewBox="0 0 2400 70" preserveAspectRatio="none"><path fill="#2f52c0" d="M0 35 Q150 65 300 35 T600 35 T900 35 T1200 35 T1500 35 T1800 35 T2100 35 T2400 35 V70 H0Z"/></svg></div>
+    <div class="wave w1"><svg viewBox="0 0 2400 70" preserveAspectRatio="none"><path fill="#3d63c9" d="M0 35 Q150 5 300 35 T600 35 T900 35 T1200 35 T1500 35 T1800 35 T2100 35 T2400 35 V70 H0Z"/></svg></div>
+  </div>
+<svg class="boat" style="left:10%;bottom:11%;width:58px;animation-delay:-1s" viewBox="0 0 60 50" aria-hidden="true"><path d="M30 2 L30 34 L5 34Z" fill="#EEE4C4"/><path d="M30 9 L30 34 L51 34Z" fill="#fff" opacity=".88"/><path d="M3 38 H57 L51 47 H9Z" fill="#8a5424"/></svg>
+<svg class="boat" style="left:46%;bottom:7%;width:44px;animation-delay:-3s" viewBox="0 0 60 50" aria-hidden="true"><path d="M30 2 L30 34 L5 34Z" fill="#EEE4C4"/><path d="M30 9 L30 34 L51 34Z" fill="#fff" opacity=".88"/><path d="M3 38 H57 L51 47 H9Z" fill="#8a5424"/></svg>
+<svg class="boat" style="left:78%;bottom:12%;width:64px;animation-delay:-2s" viewBox="0 0 60 50" aria-hidden="true"><path d="M30 2 L30 34 L5 34Z" fill="#EEE4C4"/><path d="M30 9 L30 34 L51 34Z" fill="#fff" opacity=".88"/><path d="M3 38 H57 L51 47 H9Z" fill="#8a5424"/></svg>
+</section>
+
+<section class="game" id="games">
+  <div class="wrap">
+    <h2 class="display sect" data-i18n="p_h">Our games and apps</h2>
+    <p class="sect-intro" data-i18n="p_intro">Everything we make lives here. One game so far, with more on the way.</p>
+  </div>
+  <div class="wrap grid product" id="tubora">
+    <div>
+      <h3 class="display title">Tubora <span class="kind" data-i18n="kind_game">Game</span></h3>
+      <p class="tag" data-i18n="g_tag">A ball-sort puzzle on a trip down the Nile.</p>
+      <p data-i18n="g_p">Sort the colored balls until every tube holds a single color. Travel from Aswan to Alexandria, collect golden artifacts, and keep Mishmish the cat company along the way.</p>
+      <ul class="facts">
+        <li data-i18n="g_f1">Eight regions across Egypt and Greece, and a fresh daily puzzle every day.</li>
+        <li data-i18n="g_f2">Challenge a friend with a short code. No account needed.</li>
+        <li data-i18n="g_f3">Play in English or Arabic.</li>
+        <li data-i18n="g_f4">Free to play, with short ads between levels and optional videos when you want a hint.</li>
+      </ul>
+      <span class="status"><i></i><span data-i18n="g_status">Google Play: in testing now, launching soon</span></span>
+      <div class="links">
+        <a href="tubora/privacy.html" data-i18n="l_priv">Privacy Policy</a>
+        <a href="tubora/terms.html" data-i18n="l_terms">Terms of Service</a>
+      </div>
+    </div>
+    <div class="phones" id="phones">
+      <div class="phone"><img id="s1" src="img/shot-en2.jpg" alt="A Tubora level with colored balls in glass tubes" width="540" height="1080" loading="lazy"></div>
+      <div class="phone"><img id="s2" src="img/shot-en3.jpg" alt="The Tubora main menu" width="540" height="1080" loading="lazy"></div>
+      <div class="phone"><img id="s3" src="img/shot-en1.jpg" alt="The Tubora daily puzzle with carved Eye of Horus balls" width="540" height="1080" loading="lazy"></div>
+      <div class="phone"><img id="s4" src="img/shot-en4.jpg" alt="Challenging a friend with a puzzle code" width="540" height="1080" loading="lazy"></div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="next">
+      <strong data-i18n="n_h">The next game or app is in the works.</strong>
+      <span data-i18n="n_p">Write to us and we will tell you when it launches.</span>
+    </div>
+  </div>
+</section>
+
+<section class="way" id="way">
+  <div class="wrap">
+    <h2 class="display" data-i18n="w_h">How we build</h2>
+    <div class="cols">
+      <div class="col"><h3 data-i18n="w1_h">Calm first</h3><p data-i18n="w1_p">No countdown timers and no pressure. A level should feel like a deep breath, not a chase.</p></div>
+      <div class="col"><h3 data-i18n="w2_h">Egypt, told gently</h3><p data-i18n="w2_p">We draw from the places and objects we grew up around, and share short facts about them that you can skip.</p></div>
+      <div class="col"><h3 data-i18n="w3_h">Fair to players</h3><p data-i18n="w3_p">Games are free to start. Ads stay short and spaced out, and rewards come from playing.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <h2 class="display" data-i18n="c_h">Say hello.</h2>
+    <p data-i18n="c_p">Questions, press, or a game idea? Write to us and we will reply.</p>
+    <a class="mail" href="mailto:abdelatielshafi@gmail.com">abdelatielshafi@gmail.com</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap row">
+    <span>© 2026 Nilevo Studios</span>
+    <nav>
+      <a href="tubora/privacy.html" data-i18n="f_priv">Tubora privacy policy</a>
+      <a href="tubora/terms.html" data-i18n="f_terms">Tubora terms</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var T = {
+    en: {
+      nav_game:'Our games and apps', nav_way:'How we build', nav_contact:'Contact',
+      hero_h:'Games and apps from the banks of the Nile.',
+      hero_p:'Nilevo Studios is a small independent team in Egypt. We build mobile games and apps with an Egyptian soul, and we keep them fair to use.',
+      cta_game:'See what we make', cta_mail:'Write to us',
+      p_h:'Our games and apps', p_intro:'Everything we make lives here. One game so far, with more on the way.',
+      kind_game:'Game', n_h:'The next game or app is in the works.', n_p:'Write to us and we will tell you when it launches.',
+      f_priv:'Tubora privacy policy', f_terms:'Tubora terms',
+      g_tag:'A ball-sort puzzle on a trip down the Nile.',
+      g_p:'Sort the colored balls until every tube holds a single color. Travel from Aswan to Alexandria, collect golden artifacts, and keep Mishmish the cat company along the way.',
+      g_f1:'Eight regions across Egypt and Greece, and a fresh daily puzzle every day.',
+      g_f2:'Challenge a friend with a short code. No account needed.',
+      g_f3:'Play in English or Arabic.',
+      g_f4:'Free to play, with short ads between levels and optional videos when you want a hint.',
+      g_status:'Google Play: in testing now, launching soon',
+      l_priv:'Privacy Policy', l_terms:'Terms of Service',
+      w_h:'How we build',
+      w1_h:'Calm first', w1_p:'Nothing shouts at you. No countdown timers and no pressure: using what we make should feel like a deep breath, not a chase.',
+      w2_h:'Egypt, told gently', w2_p:'We draw from the places and objects we grew up around, and share short facts about them that you can skip.',
+      w3_h:'Fair to people', w3_p:'Everything is free to start. Ads stay short and spaced out, and we explain plainly what data we use.',
+      c_h:'Say hello.', c_p:'Questions, press, or an idea for something we should build? Write to us and we will reply.',
+      toggle:'العربية'
+    },
+    ar: {
+      nav_game:'ألعابنا وتطبيقاتنا', nav_way:'إزاي بنبني', nav_contact:'تواصل معانا',
+      hero_h:'ألعاب وتطبيقات من ضفاف النيل.',
+      hero_p:'نيليفو ستوديوز فريق مستقل صغير في مصر. بنبني ألعاب وتطبيقات موبايل بروح مصرية، وبنخلّيها عادلة مع المستخدم.',
+      cta_game:'شوف بنعمل إيه', cta_mail:'اكتبلنا',
+      p_h:'ألعابنا وتطبيقاتنا', p_intro:'كل اللي بنعمله هنا. لعبة واحدة لحد دلوقتي، وفيه غيرها جاية.',
+      kind_game:'لعبة', n_h:'اللعبة أو التطبيق الجاي بيتحضّر.', n_p:'اكتبلنا وهنعرّفك أول ما ينزل.',
+      f_priv:'سياسة خصوصية Tubora', f_terms:'شروط استخدام Tubora',
+      g_tag:'لغز ترتيب كور في رحلة على النيل.',
+      g_p:'رتّب الكور الملوّنة لحد ما كل أنبوبة تبقى بلون واحد. سافر من أسوان للإسكندرية، واجمع الآثار الدهبية، وصاحب مشمش القطة في الطريق.',
+      g_f1:'تمانية مناطق بين مصر واليونان، ولغز يومي جديد كل يوم.',
+      g_f2:'تحدّى صاحبك بكود قصير. من غير حساب.',
+      g_f3:'بتلعب بالعربي أو بالإنجليزي.',
+      g_f4:'مجانية، وفيها إعلانات قصيرة بين المراحل، وفيديوهات اختيارية لما تحتاج تلميح.',
+      g_status:'جوجل بلاي: في الاختبار دلوقتي، وقريب جدًا للجميع',
+      l_priv:'سياسة الخصوصية', l_terms:'شروط الاستخدام',
+      w_h:'إزاي بنبني',
+      w1_h:'الهدوء الأول', w1_p:'مفيش حاجة بتزعق فيك. مفيش عدّاد بيجري ولا ضغط: استخدام اللي بنعمله المفروض يبقى زي نفس عميق، مش سباق.',
+      w2_h:'مصر بحكاية هادية', w2_p:'بنرسم من الأماكن والحاجات اللي اتربينا وسطها، ونقول عنها معلومات قصيرة تقدر تعدّيها.',
+      w3_h:'عادلين مع الناس', w3_p:'كل حاجة مجانية في البداية. الإعلانات قصيرة ومتباعدة، وبنشرح بوضوح إحنا بنستخدم أنهي بيانات.',
+      c_h:'قولّنا أهلًا.', c_p:'عندك سؤال، أو صحافة، أو فكرة حاجة نبنيها؟ اكتبلنا وهنرد عليك.',
+      toggle:'English'
+    }
+  };
+  var SHOTS = {
+    en: [['img/shot-en2.jpg','A Tubora level with colored balls in glass tubes'],['img/shot-en3.jpg','The Tubora main menu'],['img/shot-en1.jpg','The Tubora daily puzzle with carved Eye of Horus balls'],['img/shot-en4.jpg','Challenging a friend with a puzzle code']],
+    ar: [['img/shot-ar1.jpg','مرحلة من Tubora بكور ملوّنة في أنابيب زجاج'],['img/shot-ar3.jpg','القائمة الرئيسية في Tubora'],['img/shot-ar4.jpg','خريطة رحلة النيل في Tubora'],['img/shot-ar2.jpg','شاشة إنهاء المرحلة بالنجوم']]
+  };
+  var btn = document.getElementById('lang');
+  function apply(l){
+    var d = T[l], root = document.documentElement;
+    root.lang = l; root.dir = l === 'ar' ? 'rtl' : 'ltr';
+    document.querySelectorAll('[data-i18n]').forEach(function(el){ var k = el.getAttribute('data-i18n'); if (d[k]) el.textContent = d[k]; });
+    btn.textContent = d.toggle;
+    for (var i = 0; i < 4; i++){ var im = document.getElementById('s' + (i+1)); im.src = SHOTS[l][i][0]; im.alt = SHOTS[l][i][1]; }
+    document.title = l === 'ar' ? 'نيليفو ستوديوز | ألعاب وتطبيقات من النيل' : 'Nilevo Studios | Games and apps from the Nile';
+    try { localStorage.setItem('nilevo_lang', l); } catch(e) {}
+  }
+  var start = 'en';
+  try { start = localStorage.getItem('nilevo_lang') || ((navigator.language || '').toLowerCase().indexOf('ar') === 0 ? 'ar' : 'en'); } catch(e) {}
+  if (start !== 'en') apply(start);
+  btn.addEventListener('click', function(){ apply(document.documentElement.lang === 'ar' ? 'en' : 'ar'); });
+})();
+</script>
+</body>
+</html>
